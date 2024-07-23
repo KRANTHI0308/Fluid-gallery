@@ -10,14 +10,13 @@
         padding: 0;
         box-sizing: border-box;
       }
-      .body1 {
+      body {
         width: 100vw;
         display: flex;
         justify-content: center;
       }
       .container {
         width: 100vw;
-        height: 200vh;
         background-color: skyblue;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -26,8 +25,7 @@
         align-items: center;
       }
       img {
-        width: 100%;
-        height: 100%;
+        
         border-radius: 20px;
       }
       .box img:hover {
@@ -150,11 +148,12 @@
       }
 
       .box > h1 {
-        font-size: 130px;
         font-weight: bold;
         color: white;
       }
       .box {
+        height:50vh;
+        width:25vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -164,14 +163,13 @@
         filter: grayscale(100%);
       }
       .iner-header img {
-        width: 200px;
-        height: 150px;
+        width: 140px;
+        height: 80px;
       }
       .iner-header {
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        font-size: 50px;
+        justify-content: space-evenly;
         color: black;
       }
       .header {
@@ -181,8 +179,8 @@
         background-color: lightblue;
       }
       .title {
-        padding: 160px 50px;
-        font-size: 80px;
+        padding: 50px 25px; 
+        font-size: 24px;
       }
       .title1:hover {
         background-color: gray;
@@ -203,27 +201,26 @@
       .footercontainer {
         display: flex;
         flex-direction: column;
-        gap: 80px;
       }
       .socialicons {
+        height:70px;
         display: flex;
         justify-content: center;
-        padding: 60px;
+        align-items: center;
+        gap:10px;
       }
       .social {
-        background-color: greenyellow;
-        height: 200px;
-        width: 200px;
-        padding: 45px;
-        border-radius: 50px;
+        height: 50px;
+        width: 50px;
       }
       .copy {
-        font-size: 60px;
+        font-size: 15px;
         font-weight: 600;
         text-align: center;
         color: red;
+        letter-spacing:1px;
       }
-      @media screen and (min-width:320px) and (max-width:779px){
+      /* @media screen and (min-width:320px) and (max-width:779px){
 .container{
   display:none;
   justify-content: center;
@@ -283,7 +280,7 @@ align-items: center;
           text-align: center;
           color: red;
         }
-      }
+      } */
       
     </style>
   </head>
