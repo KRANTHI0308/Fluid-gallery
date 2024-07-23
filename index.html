@@ -149,7 +149,7 @@
 
       .box > h1 {
         font-weight: bold;
-        color: white;
+        color:black;
       }
       .box {
         height:50vh;
@@ -157,10 +157,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        filter: grayscale(100%);
+
       }
       .box:hover {
+        transform: scale(1.15);
         background-blend-mode: color-dodge;
-        filter: grayscale(100%);
+        filter: grayscale(0%);
       }
       .iner-header img {
         width: 140px;
@@ -220,67 +223,49 @@
         color: red;
         letter-spacing:1px;
       }
-      /* @media screen and (min-width:320px) and (max-width:779px){
-.container{
-  display:none;
-  justify-content: center;
-align-items: center;
-}
+      @media screen and (min-width:480px) and (max-width:990px) {
+        .title{
+        display: none;
+       } 
+       .container {
+        width: 100vw;
+        background-color: skyblue;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+        justify-content: center;
+        align-items: center;
+      } 
+      .box {
+        height:50vh;
+        width:50vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        filter: grayscale(100%);
       }
-      @media screen and (max-width: 780px) {
-        .title {
-          display:none;
-        }
-        .iner-header , img {
-          font-size: 15px;
-        }
-        .body1 {
-          width: 100vw;
-          display: flex;
-          justify-content: center;
-        }
+      }
+      @media screen and (max-width:479px){
+        .title{
+        display: none;
+       } 
         .container {
-          width: 100vw;
-          height: 200vh;
-          background-color: skyblue;
-          display: grid;
-          grid-template-columns: repeat(2, 2fr);
-          grid-template-rows: repeat(8, 1fr);
-          justify-content: center;
-          align-items: center;
-        }
-
-        .box > h1 {
-          font-size: 20px;
-          font-weight: bold;
-          color: black;
-        }
-        .iner-header img {
-          width: 50px;
-        }
-        .footercontainer {
-          display: flex;
-          flex-direction: column;
-          gap: 2px;
-        }
-        .socialicons {
-          display: flex;
-          justify-content: center;
-          padding: 10px;
-        }
-        .social {
-          background-color: greenyellow;
-          height: 20px;
-          width: 20px;
-          padding: 20px;
-          border-radius: 20px;
-        }
-        .copy {
-          font-size: 10px;
-          text-align: center;
-          color: red;
-        }
-      } */
+        width: 100vw;
+        background-color: skyblue;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        height:50vh;
+        width:100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        filter: grayscale(100%);
+      }
+      }
       
     </style>
   </head>
@@ -291,7 +276,7 @@ align-items: center;
         <img src="./gallery-svgrepo-com.svg" />
         <h1>FLUID GALLERY</h1>
       </div>
-      <div class="iner-header">
+      <div class="iner-header fluid-id">
         <div class="title title1">1ST FLUID</div>
         <div class="title title2">2ND FLUID</div>
         <div class="title title3">3RD FLUID</div>
